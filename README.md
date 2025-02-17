@@ -57,9 +57,42 @@ ___
 
 <details><summary>Click to expand..</summary>
 
+
 # Proton Drive
 - https://rclone.org/protondrive/
 
+
+## Create Remore Config
+- The remote config file is located here `sudo gedit ~/.config/rclone/rclone.conf`
+
+<br><br>
+
+### Non-Interactive
+```bash
+#!/bin/bash
+
+# Variablen definieren
+USERNAME="xxxxxxxxxxx@protonmail.com"
+PASSWORD="xxxxxxxxxxxxxxx"
+MAILBOX_PASSWORD="xxxxxxxxxxxxxxxxxx"
+TWO_FA="914892"
+DESCRIPTION="Meine ProtonDrive Remote"
+
+# Rclone Konfiguration erstellen
+rclone config create --obscure proton protondrive \
+    username="$USERNAME" \
+    password="$PASSWORD" \
+    mailbox_password="$MAILBOX_PASSWORD" \
+    2fa="$TWO_FA" \
+    replace_existing_draft=true \
+    description="$DESCRIPTION"
+```
+- **Make sure that you execute the script with an valid 2FA code and then run `rclone lsd proton:` to auth**
+
+
+<br><br>
+
+### Interactive
 ```shell
 rclone config
 
