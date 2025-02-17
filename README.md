@@ -76,11 +76,26 @@ rclone config
 
 
 
+
+
+
+<br><br>
+<br><br>
+
 # FAQ
 
 ## WARN RESTY 422 POST https://mail.proton.me/api/auth/v4: For security reasons, please complete CAPTCHA. If you can't pass it, please try updating your app or contact us here: https://proton.me/support/appeal-abuse (Code=9001, Status=422), Attempt 1
 2025/02/17 13:07:41.224555 ERROR RESTY 422 POST https://mail.proton.me/api/auth/v4: For security reasons, please complete CAPTCHA. I
 - Open `https://mail.proton.me` in new incognito browser window, sign-in and solve captcha. Then your host IP will be marked as captcha solved and you can continue
+
+<br><br>
+
+## WARN RESTY 422 POST https://mail.proton.me/api/auth/v4/2fa: Incorrect login credentials. Please try again. (Code=8002, Status=422), Attempt 1
+- When youc reate your config and you enter your 2FA then it will will change in meantime so you must set the 2fa via you cli command e.g. in this list file command:
+```shell
+rclone ls remoteNameHere: --protondrive-2fa=123456
+```
+
   
 </details>
 
