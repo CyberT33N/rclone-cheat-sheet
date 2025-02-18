@@ -188,9 +188,13 @@ ___
 <details><summary>Click to expand..</summary>
 
 
+
 ## Rclone CLI Befehle und Optionen
 
 Diese Tabelle listet die wichtigsten Rclone CLI Befehle und Optionen auf, basierend auf der von dir bereitgestellten Dokumentation.
+
+
+<details><summary>Click to expand..</summary>
 
 ### Befehle (Subcommands)
 
@@ -303,6 +307,68 @@ Diese Tabelle listet eine Auswahl der wichtigsten Rclone-Optionen auf.  Beachte,
 
 *   **Dokumentation:** Diese Tabelle basiert auf dem bereitgestellten Text. Für detailliertere Informationen zu jeder Option und für alle verfügbaren Optionen konsultiere bitte die offizielle Rclone-Dokumentation.
 *   **Optionen können sich ändern:** Die verfügbaren Optionen und ihre Funktionsweise können sich zwischen Rclone-Versionen ändern.  Achte darauf, die Dokumentation für deine verwendete Version zu konsultieren.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+# config
+- https://rclone.org/commands/rclone_config/
+
+
+<details><summary>Click to expand..</summary>
+
+
+
+# Rclone Config Befehle Übersicht
+
+| Befehl                           | Beschreibung |
+|----------------------------------|-------------|
+| `rclone`                        | Zeigt Hilfe für Rclone-Befehle, Flags und Backends. |
+| `rclone config create`          | Erstellt einen neuen Remote mit Name, Typ und Optionen. |
+| `rclone config delete`          | Löscht einen bestehenden Remote. |
+| `rclone config disconnect`      | Trennt den Benutzer vom Remote. |
+| `rclone config dump`            | Gibt die Konfigurationsdatei als JSON aus. |
+| `rclone config edit`            | Startet eine interaktive Konfigurationssitzung. |
+| `rclone config encryption`      | Setzt, entfernt und überprüft die Verschlüsselung der Konfigurationsdatei. |
+| `rclone config file`            | Zeigt den Pfad der verwendeten Konfigurationsdatei an. |
+| `rclone config password`        | Aktualisiert das Passwort in einem bestehenden Remote. |
+| `rclone config paths`           | Zeigt die verwendeten Pfade für Konfiguration, Cache, Temp etc. an. |
+| `rclone config providers`       | Listet alle Anbieter und Optionen im JSON-Format auf. |
+| `rclone config reconnect`       | Authentifiziert den Benutzer mit dem Remote erneut. |
+| `rclone config redacted`        | Gibt die redigierte (entschlüsselte) Konfigurationsdatei aus oder die redigierte Konfiguration eines einzelnen Remotes. |
+| `rclone config show`            | Gibt die (entschlüsselte) Konfigurationsdatei aus oder die Konfiguration eines einzelnen Remotes. |
+| `rclone config touch`           | Stellt sicher, dass die Konfigurationsdatei existiert. |
+| `rclone config update`          | Aktualisiert Optionen in einem bestehenden Remote. |
+| `rclone config userinfo`        | Zeigt Informationen über den angemeldeten Benutzer des Remotes an. |
+
+
+    
+</details>
+
+
+
+
+
+
+
+
+
+
 
 
   
